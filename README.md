@@ -1,2 +1,0 @@
-# blogger
-Blogging platform
