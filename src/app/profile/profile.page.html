@@ -1,4 +1,15 @@
 <app-header></app-header>
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="4" offset-lg="4">
+        <app-bio
+          [userName]="userName"
+          [followers]="followers"
+          [likes]="likes"
+          [articles]="articles"
+        ></app-bio>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
