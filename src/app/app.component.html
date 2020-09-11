@@ -1,3 +1,48 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="main">
+    <ion-header>
+      <ion-toolbar translucent>
+        <ion-title>Blogger</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item lines="none">
+            <ion-icon name="book-outline" slot="start"></ion-icon>
+            <ion-label>My Blogs</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none">
+            <ion-icon name="search-outline" slot="start"></ion-icon>
+            <ion-label>Explore</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none">
+            <ion-icon name="bookmark-outline" slot="start"></ion-icon>
+            <ion-label>Saved</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none">
+            <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+            <ion-label>Profile</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none">
+            <ion-icon name="exit" slot="start"></ion-icon>
+            <ion-label>Logout</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

@@ -9,6 +9,7 @@ import { ProfilePageRoutingModule } from './profile-routing.module';
 import { ProfilePage } from './profile.page';
 
 import { HeaderComponent } from '../common/header/header.component';
+import { BioComponent } from '../common/bio/bio.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { HeaderComponent } from '../common/header/header.component';
     IonicModule,
     ProfilePageRoutingModule
   ],
-  declarations: [ProfilePage, HeaderComponent]
+  declarations: [ProfilePage, HeaderComponent, BioComponent]
 })
 export class ProfilePageModule {}

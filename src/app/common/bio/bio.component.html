@@ -1,0 +1,30 @@
+<ion-card>
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-lg="4" offset-lg="4">
+          <div class="profile-picture">
+            <img src="../../../assets/portrait.png">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="user">
+      <h1>{{ userName }}</h1>
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-label>Followers</ion-label>
+        <ion-badge slot="end">{{ followers }}</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>Likes</ion-label>
+        <ion-badge color="secondary" slot="end">{{ likes }}</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-label>Articles</ion-label>
+        <ion-badge color="dark" slot="end">{{ articles }}</ion-badge>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
