@@ -1,0 +1,46 @@
+<ion-card>
+  <ion-card-content class="ion-text-center">
+    <ion-chip outline *ngFor="let genre of genreList">
+      <ion-label>{{ genre }}</ion-label>
+    </ion-chip>
+  </ion-card-content>
+</ion-card>
+<ion-grid>
+  <ion-row>
+    <ion-col size-lg="4" size-xs="14" offset-lg="4" offset-xs="-1">
+      <ion-card>
+        <ion-card-header>
+          <ion-badge color="dark">
+            <ion-label>Popular Picks</ion-label>
+          </ion-badge>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list *ngFor="let article of articles">
+            <ion-item>
+              <div class="article-title">
+                <b><a href="{{ article.link }}">{{ article.title }}</a></b>
+                <div>
+                  <ion-chip>
+                    <ion-label>
+                      <ion-icon name="pencil-outline"></ion-icon>
+                      {{ article.author }}
+                    </ion-label>
+                  </ion-chip>
+                  <ion-chip>
+                    <ion-label>
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      {{ article.date }}
+                    </ion-label>
+                  </ion-chip>
+                </div>
+              </div>
+              <div class="article-image">
+                <img src = "{{ article.img }}">
+              </div>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
