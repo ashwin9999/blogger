@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-
+import { HeaderComponent } from '../common/header/header.component';
+import { PopularPickComponent } from '../common/popular-pick/popular-pick.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,6 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, HeaderComponent, PopularPickComponent]
 })
 export class HomePageModule {}
