@@ -1,0 +1,39 @@
+<ion-searchbar (ionInput)="onInput($event)" placeholder="Search"></ion-searchbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="4" offset-lg="2">
+        <ion-card *ngIf="articles.length > 0">
+          <ion-card-content>
+            <ion-list class="article-list" *ngFor="let article of articles | slice:0:3">
+              <ion-item>
+                <div class="article-title">
+                  <b><a style="text-decoration:none" href="">{{ article.title }}</a></b>
+                </div>
+                <div class="article-image">
+                  <img src = "{{ article.img }}">
+                </div>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+  
+      <ion-col size-lg="4">
+        <ion-card *ngIf="articles.length > 3">
+          <ion-card-content>
+            <ion-list class="article-list" *ngFor="let article of articles | slice:3:6">
+              <ion-item>
+                <div class="article-title">
+                  <b><a style="text-decoration:none" href="{{ article.link }}">{{ article.title }}</a></b>
+                </div>
+                <div class="article-image">
+                  <img src = "{{ article.img }}">
+                </div>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
