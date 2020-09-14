@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './explore.page.html',
   styleUrls: ['./explore.page.scss'],
 })
-export class ExplorePage implements OnInit {
+export class ExplorePage {
   // TODO: get these from service calls
   articles = [
     {
@@ -39,10 +39,4 @@ export class ExplorePage implements OnInit {
       link: '',
     },
   ];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

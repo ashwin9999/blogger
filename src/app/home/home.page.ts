@@ -31,8 +31,5 @@ export class HomePage {
       date: 'Sep 4',
       link: '',
     }
-  ]
-
-  constructor() {}
-
+  ];
 }
