@@ -9,6 +9,7 @@ import { SavedPageRoutingModule } from './saved-routing.module';
 import { SavedPage } from './saved.page';
 
 import { HeaderComponent } from '../common/header/header.component';
+import { CompactListComponent } from '../common/compact-list/compact-list.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { HeaderComponent } from '../common/header/header.component';
     IonicModule,
     SavedPageRoutingModule
   ],
-  declarations: [SavedPage, HeaderComponent]
+  declarations: [SavedPage, HeaderComponent, CompactListComponent]
 })
 export class SavedPageModule {}
