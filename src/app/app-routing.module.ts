@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'explore',
     loadChildren: () => import('./explore/explore.module').then( m => m.ExplorePageModule)
   },
+  {
+    path: 'saved',
+    loadChildren: () => import('./saved/saved.module').then( m => m.SavedPageModule)
+  },
 ];
 
 @NgModule({
