@@ -7,8 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { ExplorePageRoutingModule } from './explore-routing.module';
 
 import { ExplorePage } from './explore.page';
-import { HeaderComponent } from '../common/header/header.component';
-import { SearchableListComponent } from '../common/searchable-list/searchable-list.component';
+import { HeaderComponent } from '../common/components/header/header.component';
+import { SearchableListComponent } from '../common/components/searchable-list/searchable-list.component';
 
 @NgModule({
   imports: [

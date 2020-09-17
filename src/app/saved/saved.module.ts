@@ -8,8 +8,8 @@ import { SavedPageRoutingModule } from './saved-routing.module';
 
 import { SavedPage } from './saved.page';
 
-import { HeaderComponent } from '../common/header/header.component';
-import { CompactListComponent } from '../common/compact-list/compact-list.component';
+import { HeaderComponent } from '../common/components/header/header.component';
+import { CompactListComponent } from '../common/components/compact-list/compact-list.component';
 
 @NgModule({
   imports: [
