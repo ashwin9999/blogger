@@ -8,8 +8,8 @@ import { ProfilePageRoutingModule } from './profile-routing.module';
 
 import { ProfilePage } from './profile.page';
 
-import { HeaderComponent } from '../common/header/header.component';
-import { BioComponent } from '../common/bio/bio.component';
+import { HeaderComponent } from '../common/components/header/header.component';
+import { BioComponent } from '../common/components/bio/bio.component';
 
 @NgModule({
   imports: [
