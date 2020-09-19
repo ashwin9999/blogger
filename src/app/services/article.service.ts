@@ -55,4 +55,13 @@ export class ArticleService {
       { withCredentials: true },
     ).pipe(take(1));
   }
+
+  deleteArticle(id: number): Observable<Article> {
+    const url = `${this.baseUrl}/article/${id}`;
+
+    return this.http.delete<Article>(
+      url,
+      { withCredentials: true },
+    ).pipe(take(1));
+  }
 }
