@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-bio',
@@ -11,8 +11,14 @@ export class BioComponent implements OnInit {
   @Input() likes: string;
   @Input() articles: string;
 
+  @Output() uploadPicture = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {}
+
+  emitUploadPicture() {
+    this.uploadPicture.emit();
+  }
 
 }
