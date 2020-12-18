@@ -15,8 +15,8 @@
           </ion-badge>
         </ion-card-header>
         <ion-card-content>
-          <ion-list *ngFor="let article of articles">
-            <ion-item>
+          <ion-list>
+            <ion-item *ngFor="let article of articles">
               <div class="article-title">
                 <b><a style="text-decoration:none"  href="{{ article.link }}">{{ article.title }}</a></b>
                 <div>
