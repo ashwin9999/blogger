@@ -22,7 +22,7 @@
         <ion-card *ngIf="articles.length > 3">
           <ion-card-content>
             <ion-list class="article-list" *ngFor="let article of articles | slice:3:6">
-              <ion-item>
+              <ion-item detail>
                 <div class="article-title">
                   <b><a style="text-decoration:none" href="{{ article.link }}">{{ article.title }}</a></b>
                 </div>
